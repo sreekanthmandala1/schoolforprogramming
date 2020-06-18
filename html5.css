@@ -1,0 +1,15 @@
+iframe {
+  margin: none;
+  padding: none;
+  background: blue; /* this is just to make the frames easier to see */
+  border: none;
+}
+#codeframe{
+  height:450px;
+}
+#leftframe{
+  text-align: justify;
+}
+#htmlimage{
+  margin-top:5px;
+}

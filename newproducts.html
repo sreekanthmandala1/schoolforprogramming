@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>electronics</title>
+        <!--jquery tag-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous">
+        </script>
+    <!--bootstrap tag-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--js tag-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous">
+        </script>
+    <!--popper.js tag-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous">
+        </script>
+    <!--css tag-->
+        <link type="text/css" rel="stylesheet" href="newproducts.css">
+    <!--fontawesome tag-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script>
+            var products = [];
+            function bodyload() {
+               var lstProducts = document.getElementById("lstProducts");
+
+               for(var item of products) {
+                   var li = document.createElement("li");
+                   li.innerHTML = item;
+                   lstProducts.appendChild(li);
+               }
+            }
+            function AddClick() {
+                document.getElementById("lstProducts").innerHTML="";
+                var newName = document.getElementById("txtName").value;
+                products.push(newName);
+                
+                bodyload();
+                document.getElementById("txtName").value="";
+            }
+        </script>
+    </head>
+    <body>
+        <div class="form-group form-inline" style="margin-top: 20px;">
+            <label id="labelnewproducts"><b>New Product</b></label>
+            
+               
+                <input type="text" placeholder="Name" class="form-control btn-sm" id="txtName" style="width:25vw">
+                <span class="input-group-append">
+                    <button class="btn btn-primary btn-md" onclick="AddClick()" type="button"  style="width:10vw">Add Product</button>
+                    
+                </span>
+            
+            </div>
+
+
+            
+            <!--
+            <input type="text" class="form-control" id="txtName">
+            <button class="btn btn-primary" onclick="AddClick()">Add Product</button>-->
+        </div>
+        <h2>Products</h2>
+        <ol id="lstProducts">
+
+        </ol>
+        
+        
+       
+    </body>
+</html>

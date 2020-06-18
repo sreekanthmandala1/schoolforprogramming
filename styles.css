@@ -1,0 +1,139 @@
+
+#dropdownitems{
+  background-color:darkcyan;
+}
+
+#dropdownlist1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:white;
+}
+#dropdownlist2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:white;
+}
+#dropdownlist3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:white;
+}
+#dropdownlist1:hover{
+  color: yellow;
+  background-color: darkcyan;
+}
+#dropdownlist2:hover{
+  color: yellow;
+  background-color: darkcyan;
+}
+#dropdownlist3:hover{
+  color: yellow;
+  background-color: darkcyan;
+}
+#list{
+  background-color: lightskyblue;
+  
+  float:right;
+}
+
+#tbutton{
+  float:right;
+}
+#listitems2,#listitems3,#listitems4,#listitems5,#listitems6,#listitems7,#listitems8,#listitems9{
+  
+  
+  color:white;
+  
+}
+
+#navitems1{
+  margin-right:25px;
+  color:white;
+  text-shadow:0px 0px 3px  black; 
+  
+}
+#navitems2{
+  margin-right:25px;
+  color:white;
+  text-shadow:0px 0px 3px  black;
+  
+}
+#navitems3{
+  margin-right:25px;
+  color:white;
+  text-shadow:0px 0px 3px  black;
+}
+#navitems4{
+  margin-right:25px;
+  color:white;
+  text-shadow:0px 0px 3px  black;
+  
+}
+#search1{
+  width:30vw;
+}
+#search2{
+  padding:10px;
+  background-color:lightskyblue;
+  color:white;
+}
+h4:hover{
+  color:rgb(52, 240, 52);
+  
+}
+h5:hover{
+  color:rgb(52, 240, 52);
+  
+}
+#ticon{
+  color:white;
+  background-color: white;
+}
+#rightframe{
+  padding:5px;
+}
+#listitems1 {
+  
+  color: white;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+  from {color: white;}
+  to {color: greenyellow;}
+}
+h4{
+  text-shadow:0px 0px 3px  black
+  
+}
+h5{
+  text-shadow:0px 0px 3px  black
+  
+}
+#navitems{
+  float:right;
+}
+#tbutton{
+    float:right;
+}
+#navitems{
+  float:right;
+}
+#footer{
+  text-align: center;
+}
+#leftframe{
+  text-align: justify;
+  
+}
+#buttontop{
+  width:100%;
+  color:white;
+  
+}
+
+
+
+
+
+
+
+
+
