@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>e-commerce</title>
+<!--jquery tag-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+    </script>
+<!--bootstrap tag-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--js tag-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous">
+    </script>
+<!--popper.js tag-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous">
+    </script>
+<!--css tag-->
+    <link type="text/css" rel="stylesheet" href="switch.css">
+<!--js tags-->
+<script src="switch.js"></script>
+<!--fontawesome tag-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body onload="bodyload()" class="container-fluid">
+  <div class="row" style="margin-top: 30px;">
+     <div class="col-3">
+       <h2>Amazon Shopping</h2>
+   <div class="form-group">
+     <label>Select a Category</label>
+     <div>
+         <select onchange="CategoryChanged()" id="lstCategories" class="form-control">
+ 
+         </select>
+     </div>
+   </div>
+   <div class="form-group">
+     <label>Select a Product</label>
+     <div>
+         <select onchange="ProductChanged()" id="lstProducts" class="form-control">
+ 
+         </select>
+     </div>
+   </div>
+   <div>
+       <label>Product Details</label>
+       <div class="card">
+           <div class="card-header">
+               <h2 id="prodName"></h2>
+           </div>
+           <div class="card-body">
+               <img width="200" height="200" id="prodImage">
+           </div>
+           <div class="card-footer">
+               <h2 id="prodPrice"></h2>
+               <button onclick="AddToCartClick()" class="btn btn-danger btn-block"><span class="fa fa-shopping-cart"></span>Add to Cart</button>
+           </div>
+       </div>
+   </div>
+     </div>
+     <div class="col-6">
+
+     </div>
+     <div class="col-3">
+        <button class="btn btn-success">
+            <span id="itemsCount"></span>
+            <span class="fa fa-shopping-cart"></span>
+            Your Cart Items
+        </button>
+     </div>
+  </div>
+</body>
+</html>
